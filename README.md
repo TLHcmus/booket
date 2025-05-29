@@ -8,7 +8,6 @@ Booket is a full-stack hotel booking platform that enables users to list their p
 
   - Secure login and registration system
   - JWT-based authentication
-  - Single user type with dual functionality (can be both guest and hotel owner)
 
 - **Property Management**
 
