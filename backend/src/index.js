@@ -35,7 +35,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: true,
+    origin: ['http://localhost:5173', 'https://booket-one.vercel.app'],
     credentials: true,
   })
 );

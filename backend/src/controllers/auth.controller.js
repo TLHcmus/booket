@@ -34,7 +34,8 @@ const register = async (req, res, next) => {
 
     res.cookie('auth_token', token, {
       httpOnly: true,
-      secure: NODE_ENV === 'production',
+      secure: true,
+      sameSite: 'none',
       maxAge: (parseInt(JWT_EXPIRES_IN) || 1) * 24 * 60 * 60 * 1000,
     });
 
@@ -71,7 +72,8 @@ const logIn = async (req, res, next) => {
 
     res.cookie('auth_token', token, {
       httpOnly: true,
-      secure: NODE_ENV === 'production',
+      secure: true,
+      sameSite: 'none',
       maxAge: (parseInt(JWT_EXPIRES_IN) || 1) * 24 * 60 * 60 * 1000,
     });
 
@@ -88,7 +90,8 @@ const logOut = (req, res, next) => {
   try {
     res.cookie('auth_token', '', {
       httpOnly: true,
-      secure: NODE_ENV === 'production',
+      secure: true,
+      sameSite: 'none',
       maxAge: new Date(0),
     });
 
