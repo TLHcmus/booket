@@ -1,0 +1,15 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+export const {
+  MONGODB_CONNECTION_STRING,
+  JWT_SECRET_KEY,
+  JWT_EXPIRES_IN,
+  NODE_ENV,
+  FRONTEND_URL,
+  CLOUDINARY_CLOUD_NAME,
+  CLOUDINARY_API_KEY,
+  CLOUDINARY_API_SECRET,
+  STRIPE_SECRET_KEY,
+} = process.env;
