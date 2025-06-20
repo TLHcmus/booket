@@ -27,6 +27,10 @@ Booket is a full-stack hotel booking platform that enables users to list their p
   - Stripe payment gateway integration
   - Secure payment processing
 
+## 🔗 Demo link
+
+Try it live: 👉 [https://booket-one.vercel.app/](https://booket-one.vercel.app/)
+
 ## 🛠️ Technologies Used
 
 ### Frontend
